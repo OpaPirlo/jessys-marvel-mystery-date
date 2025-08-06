@@ -29,19 +29,22 @@
     </div>
   </div>
 
-  <!-- Speelveld -->
-  <div id="game-container">
-    <div id="hints-box" class=""></div>
+  <!-- Achtergrond en koffers -->
+  <div class="background-container">
+    <img src="assets/background.png" alt="Achtergrond" class="background-image" />
 
     <!-- 8 koffers -->
-    <div class="koffer" id="koffer1" onclick="showHint(0)"></div>
-    <div class="koffer" id="koffer2" onclick="showHint(1)"></div>
-    <div class="koffer" id="koffer3" onclick="showHint(2)"></div>
-    <div class="koffer" id="koffer4" onclick="showHint(3)"></div>
-    <div class="koffer" id="koffer5" onclick="showHint(4)"></div>
-    <div class="koffer" id="koffer6" onclick="showHint(5)"></div>
-    <div class="koffer" id="koffer7" onclick="showHint(6)"></div>
-    <div class="koffer" id="koffer8" onclick="showHint(7)"></div>
+    <div class="koffer" style="top: 80%; left: 10%;" onclick="showHint(0)"></div>
+    <div class="koffer" style="top: 60%; left: 20%;" onclick="showHint(1)"></div>
+    <div class="koffer" style="top: 70%; left: 45%;" onclick="showHint(2)"></div>
+    <div class="koffer" style="top: 40%; left: 60%;" onclick="showHint(3)"></div>
+    <div class="koffer" style="top: 50%; left: 80%;" onclick="showHint(4)"></div>
+    <div class="koffer" style="top: 30%; left: 30%;" onclick="showHint(5)"></div>
+    <div class="koffer" style="top: 60%; left: 70%;" onclick="showHint(6)"></div>
+    <div class="koffer" style="top: 40%; left: 50%;" onclick="showHint(7)"></div>
+
+    <!-- Hintbox -->
+    <div id="hints-box" class=""></div>
   </div>
 
   <!-- Klikgeluid -->
@@ -49,6 +52,5 @@
 
   <!-- JavaScript -->
   <script src="js/script.js"></script>
-
 </body>
 </html>
