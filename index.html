@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Marvel Koffer Verrassing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Intro Pop-up -->
+  <div id="intro-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeIntro()">❌</span>
+      <h2>🧨 Welkom bij je Missie</h2>
+      <p>
+        🎯 Vrijdag gaan we op date.<br>
+        Wat we gaan doen? Geheim.<br>
+        Wat je mee moet nemen? Daarvoor zijn er 8 koffers. Klik ze. Tik ze. Ram erop.<br><br>
+        💥 Maar eerst dit:<br>
+        Lees dit venster (je bent hier nu toch)<br>
+        En klik dan op die grote rode ❌ alsof je Hydra wegklikt.<br><br>
+        De rest laat je aan mij over.<br>
+        Trust the Merc.<br><br>
+        🖤 Yours sarcastically,<br>
+        Deadpool... of ik.
+      </p>
+      <video class="intro-video" src="assets/dance.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+
+  <!-- Speelveld -->
+  <div id="game-container">
+    <div id="hints-box" class=""></div>
+
+    <!-- 8 koffers -->
+    <div class="koffer" id="koffer1" onclick="showHint(0)"></div>
+    <div class="koffer" id="koffer2" onclick="showHint(1)"></div>
+    <div class="koffer" id="koffer3" onclick="showHint(2)"></div>
+    <div class="koffer" id="koffer4" onclick="showHint(3)"></div>
+    <div class="koffer" id="koffer5" onclick="showHint(4)"></div>
+    <div class="koffer" id="koffer6" onclick="showHint(5)"></div>
+    <div class="koffer" id="koffer7" onclick="showHint(6)"></div>
+    <div class="koffer" id="koffer8" onclick="showHint(7)"></div>
+  </div>
+
+  <!-- Klikgeluid -->
+  <audio id="click-sound" src="assets/click.mp3" preload="auto"></audio>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background: url('../assets/background.png') no-repeat center center;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  touch-action: manipulation;
+}
+
+.koffer {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('../assets/koffer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  transition: transform 0.2s ease;
+}
+
+.koffer:hover {
+  transform: scale(1.1);
+}
+
+/* Posities koffers */
+#koffer1 { top: 82%; left: 7%; }
+#koffer2 { top: 58%; left: 20%; }
+#koffer3 { top: 70%; left: 45%; }
+#koffer4 { top: 38%; left: 60%; }
+#koffer5 { top: 50%; left: 80%; }
+#koffer6 { top: 25%; left: 30%; }
+#koffer7 { top: 60%; left: 70%; }
+#koffer8 { top: 40%; left: 50%; }
+
+/* Hintbox gecentreerd */
+#hints-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 2em;
+  border-radius: 20px;
+  font-size: 1.3em;
+  text-align: center;
+  z-index: 1000;
+  max-width: 90vw;
+  display: none;
+}
+
+#hints-box.show {
+  display: block;
+}
+
+/* Intro pop-up modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(145deg, #1a1a1a, #3d0000);
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 2em;
+}
+
+.modal-content {
+  max-width: 90%;
+  background: rgba(0, 0, 0, 0.85);
+  border: 3px solid crimson;
+  border-radius: 15px;
+  padding: 2em;
+  box-shadow: 0 0 20px red;
+  font-size: 1em;
+  line-height: 1.5em;
+  position: relative;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: crimson;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2em;
+  cursor: pointer;
+  color: crimson;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Dansvideo styling */
+.intro-video {
+  position: absolute;
+  right: 20px;
+  top: 135px;
+  width: 240px;
+  max-width: 80%;
+  border: 2px solid crimson;
+  border-radius: 12px;
+  box-shadow: 0 0 10px red;
+  background-color: black;
+  z-index: 1001;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
